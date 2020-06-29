@@ -1,6 +1,6 @@
 package local.nix.solid.project.gym;
 
-public class Coach {
+public class CoachService {
 
     private AirConditioning airConditioning = new AirConditioning();
     private TreadMill treadMill = new TreadMill();
