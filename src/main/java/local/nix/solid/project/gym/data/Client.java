@@ -1,4 +1,6 @@
 package local.nix.solid.project.gym.data;
 
-public class Client extends  AbstractData<Client>{
+import local.nix.solid.project.gym.data.abstr.AbstractData;
+
+public class Client extends AbstractData<Client> {
 }

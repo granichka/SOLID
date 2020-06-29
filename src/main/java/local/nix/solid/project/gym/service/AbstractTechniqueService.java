@@ -1,6 +1,6 @@
 package local.nix.solid.project.gym.service;
 
-import local.nix.solid.project.gym.data.AbstractTechnique;
+import local.nix.solid.project.gym.data.abstr.AbstractTechnique;
 
 public interface AbstractTechniqueService<T extends AbstractTechnique> extends AbstractService{
 
