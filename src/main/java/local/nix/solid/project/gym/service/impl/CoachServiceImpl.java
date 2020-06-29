@@ -1,23 +1,18 @@
 package local.nix.solid.project.gym.service.impl;
 
-import local.nix.solid.project.gym.CoachResponsibility;
 import local.nix.solid.project.gym.data.Client;
-import local.nix.solid.project.gym.service.AirConditioningService;
+import local.nix.solid.project.gym.service.CoachResponsibilityService;
 import local.nix.solid.project.gym.service.CoachService;
-import local.nix.solid.project.gym.service.TreadMillService;
-import local.nix.solid.project.gym.service.impl.AirConditioningServiceImpl;
-import local.nix.solid.project.gym.service.impl.TreadMillServiceImpl;
+
 
 public class CoachServiceImpl implements CoachService {
 
-    private AirConditioningService airConditioning = new AirConditioningServiceImpl();
-    private TreadMillService treadMill = new TreadMillServiceImpl();
-    CoachResponsibility coachResponsibility = new CoachResponsibility();
+    CoachResponsibilityService coachResponsibilityService = new CoachResponsibilityServiceImpl();
 
     public void startWorkOut(Client client) {
-        coachResponsibility.startWorkOutResponsibility(airConditioning, treadMill);
+        coachResponsibilityService.startWorkOutResponsibility();
         train(client);
-        coachResponsibility.finishWorkOutResponsibility();
+        coachResponsibilityService.finishWorkOutResponsibility();
     }
 
     public void train(Client client) {
