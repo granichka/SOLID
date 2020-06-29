@@ -1,5 +1,6 @@
 package local.nix.solid.project.gym.service.impl;
 
+import local.nix.solid.project.gym.config.ObjectFactory;
 import local.nix.solid.project.gym.data.Client;
 import local.nix.solid.project.gym.service.CoachResponsibilityService;
 import local.nix.solid.project.gym.service.CoachService;
@@ -7,7 +8,7 @@ import local.nix.solid.project.gym.service.CoachService;
 
 public class CoachServiceImpl implements CoachService {
 
-    CoachResponsibilityService coachResponsibilityService = new CoachResponsibilityServiceImpl();
+    CoachResponsibilityService coachResponsibilityService = ObjectFactory.getInstance().createObject(CoachResponsibilityService.class);
 
     public void startWorkOut(Client client) {
         coachResponsibilityService.startWorkOutResponsibility();
