@@ -1,4 +1,4 @@
 package local.nix.solid.project.gym.data;
 
-public class Coach {
+public class Coach extends AbstractData<Coach>{
 }
