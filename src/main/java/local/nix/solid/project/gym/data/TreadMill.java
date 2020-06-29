@@ -1,4 +1,5 @@
-package local.nix.solid.project.gym;
+package local.nix.solid.project.gym.data;
 
-public class TreadMill extends AbstractTechniqueService {
+
+public class TreadMill extends AbstractTechnique<TreadMill> {
 }
