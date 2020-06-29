@@ -1,9 +1,16 @@
 package local.nix.solid.project.gym;
 
+import local.nix.solid.project.gym.data.AirConditioning;
+import local.nix.solid.project.gym.data.TreadMill;
+import local.nix.solid.project.gym.service.AirConditioningService;
+import local.nix.solid.project.gym.service.TreadMillService;
+import local.nix.solid.project.gym.service.impl.AirConditioningServiceImpl;
+import local.nix.solid.project.gym.service.impl.TreadMillServiceImpl;
+
 public class CoachService {
 
-    private AirConditioning airConditioning = new AirConditioning();
-    private TreadMill treadMill = new TreadMill();
+    private AirConditioningService airConditioning = new AirConditioningServiceImpl();
+    private TreadMillService treadMill = new TreadMillServiceImpl();
     CoachResponsibility coachResponsibility = new CoachResponsibility();
 
     public void startWorkOut(Client client) {
