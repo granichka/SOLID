@@ -1,7 +1,6 @@
 package local.nix.solid.project.gym;
 
-import local.nix.solid.project.gym.data.AirConditioning;
-import local.nix.solid.project.gym.data.TreadMill;
+import local.nix.solid.project.gym.data.Client;
 import local.nix.solid.project.gym.service.AirConditioningService;
 import local.nix.solid.project.gym.service.TreadMillService;
 import local.nix.solid.project.gym.service.impl.AirConditioningServiceImpl;
